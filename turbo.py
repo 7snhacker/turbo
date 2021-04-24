@@ -10,11 +10,15 @@ print("                    by 7snhacker")
 print("")
 import requests
 import tkinter
+import time
 from tkinter import messagebox
 root = tkinter.Tk()
 root.withdraw()
 user = input("Username : ")
+sleep = input("sleep : ")
+sleep = float(sleep)
 while True:
+    time.sleep(sleep)
     headers = {
         'authority': 'www.instagram.com',
         'x-ig-www-claim': 'hmac.AR08hbh0m_VdJjwWvyLFMaNo77YXgvW_0JtSSKgaLgDdUu9h',
@@ -46,6 +50,5 @@ while True:
         messagebox.showinfo("7snhacker", "User Avaiable")
     elif ('"user":true') in r:
         print("Not Avaiable ==> ",user)
-
 
 
