@@ -41,7 +41,7 @@ while True:
     }
     data = {
         'username': user,
-        'enc_password': 'PWD_INSTAGRAM_BROWSER:0:&:sffdsfdsfdffrd'
+        'enc_password': '#PWD_INSTAGRAM_BROWSER:0:&:sffdsfdsfdffrd'
     }
     url = "https://www.instagram.com/accounts/login/ajax/"
     r = requests.post(url, data=data, headers=headers).text
