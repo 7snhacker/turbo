@@ -47,7 +47,9 @@ while True:
     r = requests.post(url, data=data, headers=headers).text
     if ('"user":false') in r:
         print("Avaiable ==> ",user)
-        messagebox.showinfo("7snhacker", "User Avaiable")
+        input()
+        messagebox.showinfo("7snhacker", User Avaiable")
+        break
     elif ('"user":true') in r:
         print("Not Avaiable ==> ",user)
 
